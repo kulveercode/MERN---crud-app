@@ -15,7 +15,7 @@ function App() {
   useEffect(()=> {
     const fetchData = async() => {
         try {
-            const response = await axios.get('https://crud-mern-dq9a.onrender.com');
+            const response = await axios.get('https://mern-crud-ap.onrender.com');
             dispatch(getUser(response.data));
         } catch(err) {
             console.log(err)

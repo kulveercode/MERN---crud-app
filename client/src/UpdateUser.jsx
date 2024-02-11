@@ -25,7 +25,7 @@ function UpdateUser() {
 
     const handleUpdate = (e) => {
         e.preventDefault()
-        axios.put('https://crud-mern-dq9a.onrender.com/update/'+id, {name, email, age})
+        axios.put('https://mern-crud-ap.onrender.com/update/'+id, {name, email, age})
         .then(res => {
             dispatch(updateUser({id, name, email, age}))
             navigate('/')

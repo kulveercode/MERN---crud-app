@@ -15,7 +15,7 @@ function CreateUser() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('https://crud-mern-dq9a.onrender.com/create', {name, email, age})
+        axios.post('https://mern-crud-ap.onrender.com/create', {name, email, age})
         .then(res => {
             dispatch(addUser(res.data))
             navigate('/')

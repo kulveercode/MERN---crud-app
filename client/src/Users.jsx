@@ -11,7 +11,7 @@ function Users() {
     const dispatch = useDispatch()
 
     const handleDelete = (id) => {
-        axios.delete('https://crud-mern-dq9a.onrender.com/deleteuser/'+id)
+        axios.delete('https://mern-crud-ap.onrender.com/deleteuser/'+id)
         .then(res => {
             dispatch(deleteUser({id}))
         }).catch(err => console.log(err))
